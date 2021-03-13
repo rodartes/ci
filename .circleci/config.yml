@@ -14,8 +14,7 @@ jobs:
     - run: 
       name: install dependencies
       command: |
-      python -m venv venv
-      . venv/bin/activate
+      python -m venv venv . venv/bin/activate
       pip install -r requirements.txt
     #3. Ran linter and unit tests
     - run:
